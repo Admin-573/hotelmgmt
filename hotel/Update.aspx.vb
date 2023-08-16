@@ -86,9 +86,11 @@ Partial Class hotel_Update
         Try
             cmd.ExecuteNonQuery()
             MsgBox("Employee Updated !")
+            Page.Controls.Add(New LiteralControl("<script type=text/javascript>alert('Employee Updated 🥳')</script>"))
             Response.Redirect("data.aspx")
         Catch ex As Exception
             MsgBox("CheckOut !")
+            Page.Controls.Add(New LiteralControl("<script type=text/javascript>alert('👇 Checkout Sir')</script>"))
         End Try
     End Sub
 End Class

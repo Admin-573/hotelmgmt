@@ -42,9 +42,11 @@ Partial Class hotel_Home
             cmd.Parameters.AddWithValue("@rtype", rtype.SelectedValue)
             cmd.Parameters.AddWithValue("@rfee", rfee.Text.Trim)
             cmd.ExecuteNonQuery()
-            MsgBox("Room Added Successfully")
+            'MsgBox("Room Added Successfully")
+            Page.Controls.Add(New LiteralControl("<script type=text/javascript>alert('Room Added Successfully 🏠')</script>"))
         Catch ex As Exception
-            MsgBox("Room Already Exists !")
+            'MsgBox("Room Already Exists !")
+            Page.Controls.Add(New LiteralControl("<script type=text/javascript>alert('⚠️ Room Already Exsits')</script>"))
         End Try
     End Sub
 
@@ -71,9 +73,11 @@ Partial Class hotel_Home
             cmd.Parameters.AddWithValue("@esalary", salary.Text.Trim)
             cmd.Parameters.AddWithValue("@erole", empDes.SelectedValue)
             cmd.ExecuteNonQuery()
-            MsgBox("Emp Added Successfully")
+            'MsgBox("Emp Added Successfully")
+            Page.Controls.Add(New LiteralControl("<script type=text/javascript>alert('Employee Added Successfully 👨‍💻')</script>"))
         Catch ex As Exception
-            MsgBox("Emp Already Exsits !")
+            'MsgBox("Emp Already Exsits !")
+            Page.Controls.Add(New LiteralControl("<script type=text/javascript>alert('⚠️ Employee Already Exists')</script>"))
         End Try
     End Sub
 
