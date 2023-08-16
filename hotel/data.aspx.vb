@@ -29,8 +29,7 @@ Partial Class hotel_data
             GridView_rooms.DataSource = ds_rooms.Tables(0)
             GridView_rooms.DataBind()
         Catch ex As Exception
-            'MsgBox("Room Table Empty !")
-            Page.Controls.Add(New LiteralControl("<script type=text/javascript>alert('Room Table Empty 🫗')</script>"))
+            MsgBox("Room Table Empty !")
         End Try
 
         ad_emp = New SqlDataAdapter("select eid,ename,esalary,erole from emp", con)
@@ -40,8 +39,7 @@ Partial Class hotel_data
             GridView_emp.DataSource = ds_emp.Tables(0)
             GridView_emp.DataBind()
         Catch ex As Exception
-            'MsgBox("Emp Table Empty !")
-            Page.Controls.Add(New LiteralControl("<script type=text/javascript>alert('Employee Table Empty 🥸')</script>"))
+            MsgBox("Emp Table Empty !")
         End Try
     End Sub
 End Class
