@@ -77,7 +77,7 @@
                 <tr>
                     <td>
                         <asp:TextBox ID="Reg_email" runat="server" style="margin-top:8px ; margin-right:8px" CssClass=field placeholder="Create Email" required></asp:TextBox>
-                        <asp:TextBox ID="Reg_pass" runat="server" style="margin-top:8px" CssClass=field placeholder="Strong Password !" required></asp:TextBox>
+                        <asp:TextBox ID="Reg_pass" runat="server" style="margin-top:8px" CssClass=field placeholder="Strong Password !" type="password" required></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
