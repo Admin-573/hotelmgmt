@@ -37,7 +37,7 @@ Partial Class hotel_Login
                 MsgBox("Successfully Login")
                 Response.Redirect("~/hotel/Home.aspx")
             ElseIf adminMail.Trim = Log_Email.Text.Trim And admiPasswd <> Log_Pass.Text.Trim Then
-                MsgBox("Password wrong !!")
+                Page.Controls.Add(New LiteralControl("<script type=text/javascript>alert('⚠️ Password Wrong !')</script>"))
             End If
         Catch 
         End Try

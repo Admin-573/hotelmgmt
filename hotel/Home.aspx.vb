@@ -46,7 +46,7 @@ Partial Class hotel_Home
             Page.Controls.Add(New LiteralControl("<script type=text/javascript>alert('Room Added Successfully 🏠')</script>"))
         Catch ex As Exception
             'MsgBox("Room Already Exists !")
-            Page.Controls.Add(New LiteralControl("<script type=text/javascript>alert('⚠️ Room Already Exsits')</script>"))
+            Page.Controls.Add(New LiteralControl("<script type=text/javascript>alert('⚠️ Room Already Exist')</script>"))
         End Try
     End Sub
 

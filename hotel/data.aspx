@@ -95,6 +95,7 @@
     <table cellspacing="12px">
         <tr>
             <td>
+                <h2>Update And Delete Data Of Rooms ~</h2>
                 <asp:GridView ID="GridView_rooms" runat="server" AutoGenerateColumns="False" 
                     BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" 
                     CellPadding="8" CellSpacing="4">
@@ -128,6 +129,7 @@
             </td>
             
             <td>
+                <h2>Update And Delete Data Of Employees ~</h2>
                 <asp:GridView ID="GridView_emp" runat="server" AutoGenerateColumns="False" 
                     BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" 
                     CellPadding="8" CellSpacing="4">
